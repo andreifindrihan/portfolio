@@ -10,11 +10,12 @@ import {
   reactjs,
   redux,
   tailwind,
-  nodejs,
-  mongodb,
+  nextjs,
+  jest,
+  rts,
+  materialui,
   git,
-  figma,
-  docker,
+  graphql,
   bws,
   accesa,
   pentalog,
@@ -22,6 +23,8 @@ import {
   jobit,
   tripguide,
   threejs,
+  feedbackUser1,
+  feedbackUser2,
 } from "../assets";
 
 export const navLinks = [
@@ -80,6 +83,18 @@ const technologies = [
     icon: reactjs,
   },
   {
+    name: "Next JS",
+    icon: nextjs,
+  },
+  {
+    name: "GraphQL",
+    icon: graphql,
+  },
+  {
+    name: "Material UI",
+    icon: materialui,
+  },
+  {
     name: "Redux Toolkit",
     icon: redux,
   },
@@ -88,12 +103,12 @@ const technologies = [
     icon: tailwind,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
+    name: "Jest",
+    icon: jest,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "React Testing Library",
+    icon: rts,
   },
   {
     name: "Three JS",
@@ -103,57 +118,49 @@ const technologies = [
     name: "git",
     icon: git,
   },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    companyName: "Starbucks",
-    location: "Cluj-Napoca, Romania",
+    title: "Frontend Developer",
+    companyName: "Blue Wire Software",
     icon: bws,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "March 2019 - May 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Completed full redesigns of existing websites to improve navigation, enhance visuals and strengthen search engine rankings.",
+      "Utilized HTML, CSS, and JavaScript to create various responsive landing pages for both company and client.",
+      "Rebuilt 2-year-old ecommerce application in React 16 and Redux with full user experience redesign.",
+      "articipated in product releases and code reviews with 2 senior developers and team leads",
     ],
   },
   {
-    title: "React Native Developer",
-    companyName: "Tesla",
-    location: "Cluj-Napoca, Romania",
+    title: "Frontend Developer",
+    companyName: "Accesa",
     icon: accesa,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "May 2021 - October 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Increased the app traffic by 20% after working with UI/UX on restructuring the application home page and implementing a tutorial flow",
+      "Made recommendations for new technology integration based on suitability and alignment to business goals.",
+      "Increased overall test coverage to 70% for new and already existent features",
+      "Created non-technical descriptions of operations and workflow to enable non-coding team to function with minimal interruption",
+      "Designed and updated layouts to meet usability and performance requirements",
     ],
   },
   {
-    title: "Web Developer",
-    companyName: "Shopify",
-    location: "Cluj-Napoca, Romania",
+    title: "Frontend Developer",
+    companyName: "Pentalog",
     icon: pentalog,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "October 2021 - March 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Contributed to the development and documentation of new features on a high traffic ecommerce web app.",
+      "Helped refactor multiple reusable components to optimize page speed and scalability",
+      "Increased test coverage to 80% throughout entire codebase",
+      "Pinpointed user experience issues to devise targeted suggestions for improving user experience.",
+      "Created new documentation for MaterialUI that prevented the need for a 2-week onboarding course.",
+      "Pinpointed user experience issues to devise targeted suggestions for improving user experience.",
     ],
   },
 ];
@@ -161,27 +168,19 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "I had the great the honor to work with Andrei in the same Squad as his Product Owner. From the begining I was amazed how quickly Andrei worked himself into a new complex codebase and how quickly he managed to add value to our team. His active participating in sprint plannings, OKR refinement or technical discussion always led to fruitful outcomes and was valued by the whole team. We will certainly miss him as key member of the team and wish him all the best in his future career.",
+    name: "Florian Findeisen",
+    designation: "Senior Product Owner",
+    company: "Interhyp Gruppe",
+    image: feedbackUser1,
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Andrei is a hard working developer, dedicated to both delivering results to the client as well as improving his expertise. After having him in my team for well over a year I can safely say Andrei can be a dependable member of any team, being able to shoulder anything from time consuming tasks focusing on fine details to tackling larger features, with little to no interference from the team from conception until submitting the code for review. As far as communication and work ethics go, Andrei is a great member to have in any team, bringing a strong sense of responsibility and an open to communication attitude to the table.",
+    name: "Paul Ghiran",
+    designation: "Team Lead & Front-End Developer",
+    company: "UpLead",
+    image: feedbackUser2,
   },
 ];
 

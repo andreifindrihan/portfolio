@@ -13,10 +13,13 @@ import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
+import nextjs from "./tech/nextjs.png";
+import materialui from "./tech/materialui.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
+import graphql from "./tech/graphql.png";
+import rts from "./tech/rts.png";
+import jest from "./tech/jest.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
@@ -24,11 +27,13 @@ import threejs from "./tech/threejs.svg";
 import bws from "./company/bws.jpeg";
 import accesa from "./company/accesa.jpeg";
 import pentalog from "./company/pentalog.jpeg";
-import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+
+import feedbackUser1 from "./feedback1.jpeg";
+import feedbackUser2 from "./feedback2.jpeg";
 
 export {
   logoNoBackground,
@@ -45,18 +50,22 @@ export {
   git,
   html,
   javascript,
-  mongodb,
-  nodejs,
+  nextjs,
+  materialui,
   reactjs,
   redux,
+  graphql,
   tailwind,
   typescript,
   threejs,
+  rts,
+  jest,
   bws,
   accesa,
   pentalog,
-  tesla,
   carrent,
   jobit,
   tripguide,
+  feedbackUser1,
+  feedbackUser2,
 };

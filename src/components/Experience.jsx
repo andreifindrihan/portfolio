@@ -36,9 +36,6 @@ const ExperienceCard = ({ experience }) => {
         >
           {experience.companyName}
         </p>
-        <p className="text-secondary" style={{ margin: 0 }}>
-          {experience.location}
-        </p>
       </div>
 
       <ul className="mt-5 list-disc ml-5 space-y-2">
@@ -59,7 +56,7 @@ const Experience = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>My work so far</p>
+        <p className={styles.sectionSubText}>Where I worked</p>
         <h2 className={styles.sectionHeadText}>Experience</h2>
       </motion.div>
 

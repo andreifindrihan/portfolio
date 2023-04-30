@@ -14,9 +14,40 @@ const Navbar = () => {
     window.scrollTo(0, 0);
   };
 
+  useEffect(() => {
+    document.addEventListener("scroll", debounce(storeScroll), {
+      passive: true,
+    });
+  }, []);
+
+  const debounce = (fn) => {
+    // This holds the requestAnimationFrame reference, so we can cancel it if we wish
+    let frame;
+
+    // The debounce function returns a new function that can receive a variable number of arguments
+    return (...params) => {
+      // If the frame variable has been defined, clear it now, and queue for next frame
+      if (frame) {
+        cancelAnimationFrame(frame);
+      }
+
+      // Queue our function call for the next frame
+      frame = requestAnimationFrame(() => {
+        // Call our function and pass any params we received
+        fn(...params);
+      });
+    };
+  };
+
+  // Reads out the scroll position and stores it in the data attribute
+  // so we can use it in our stylesheets
+  const storeScroll = () => {
+    document.documentElement.dataset.scroll = window.scrollY;
+  };
+
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link

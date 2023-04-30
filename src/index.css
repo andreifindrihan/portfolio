@@ -43,10 +43,10 @@
   );
 }
 
-.green-pink-gradient {
+.orange-red-gradient {
   background: "#00cea8";
-  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
-  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  background: linear-gradient(90.13deg, #fe9677 1.9%, #f64668 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #fe9677 1.9%, #f64668 97.5%);
 }
 
 .orange-text-gradient {
@@ -124,6 +124,14 @@
   text-indent: -9999em;
   animation: mulShdSpin 1.1s infinite ease;
   transform: translateZ(0);
+}
+
+html:not([data-scroll="0"]) nav {
+  background-color: #050816;
+}
+
+nav {
+  transition: background-color 0.25s;
 }
 
 @keyframes mulShdSpin {
