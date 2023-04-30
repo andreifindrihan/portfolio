@@ -7,7 +7,6 @@ import {
   Hero,
   Navbar,
   Tech,
-  Works,
 } from "./components";
 
 const App = () => {
